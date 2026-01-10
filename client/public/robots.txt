@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://nikunjmathur.vercel.app/sitemap.xml
+Sitemap: https://HardikDhameeja.vercel.app/sitemap.xml

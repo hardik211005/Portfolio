@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import profileImg from "/src/assets/images/profile.webp";
 import { ScrollTrigger } from "gsap/all";
 import { gsap } from "gsap";
 import Heading from "../ui/Heading";
@@ -42,10 +41,10 @@ export default function About() {
             ref={profile}
             loading="lazy"
             className="aspect-square h-auto w-full rounded-md object-cover object-center md:aspect-auto"
-            src={profileImg}
+            src="/Profile.png"
             width="600"
             height="800"
-            alt="portrait image of Nikunj posing at an event"
+            alt="portrait image of Hardikposing at an event"
           />
         </div>
         <div className="top-20 sm:sticky md:top-28 lg:top-32 md:w-1/2">
@@ -57,18 +56,16 @@ export default function About() {
               A brief intro, who am I?
             </h3>
             <p ref={body} className=" translate-y-10 text-body-1 2xl:text-4xl opacity-0">
-              I am a tech enthusiast since middle school and love to interact with technology!
+              I have been passionate about technology since my middle school days and have always enjoyed exploring how things work in the digital world.
 
-              <br></br>
-              <br></br>I have set up my path to pursue the things that excite me the 
-              most! Working on code has now become my passion and I look forward to 
-              convert it into my profession. 😎
-              <br></br>
-              <br></br>
-              I am currently pursuing a bachelor's degree focused on Computer Science 
-              Engineering. Interested in Web Development, iOS Development & using AI to 
-              my advantage, I would love to be a part of a diverse team of people working 
-              on areas that are in my interest.
+<br></br>
+<br></br>
+Over time, I consciously shaped my path around the things that genuinely excite me. Writing code has now become something I truly enjoy, and I am motivated to turn this passion into a long-term professional career. 
+
+<br></br>
+<br></br>
+I am currently pursuing a bachelor's degree in Computer Science Engineering. With a strong interest in Web Development, UI/UX Designing , Canva,  and leveraging AI to work smarter, I aspire to be part of a diverse and collaborative team working on impactful and meaningful projects.
+
             </p>
           </div>
         </div>
