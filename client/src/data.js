@@ -598,7 +598,7 @@ export const projects = [
 
   {
   slug: "projectflow",
-  name: "ProjectFlow - Project Management Platform",
+  name: "Project Management Platform",
   shortName: "ProjectFlow",
   tagline: "Plan smarter. Collaborate better. Deliver faster.",
   description:

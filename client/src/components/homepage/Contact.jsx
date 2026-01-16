@@ -164,11 +164,11 @@ export default function Contact() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <span>HardikDhameeja0810@gmail.com</span>
+                <span>HardikDhameeja2105@gmail.com</span>
                 <span className="absolute bottom-0 left-0 h-[0.12em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
               </a>
               <a
-                href="https://drive.google.com/file/d/1aRhnhQ-G9UOkpJUWGNQApCu05gLXzmmn/view?usp=sharing"
+                href="https://drive.google.com/file/d/1o4gqJk26mPzr0-jS3MlNnDrwmYSaFrxC/view?usp=sharing"
                 className="group relative w-fit cursor-pointer"
                 target="_blank"
                 rel="noreferrer"
@@ -183,7 +183,7 @@ export default function Contact() {
             <h4 className="text-body-1 2xl:text-4xl font-semibold">My Digital Spaces</h4>
             <div className="space-y-3 text-body-2 2xl:text-3xl">
               <a
-                href="https://github.com/HardikDhameeja08"
+                href="https://github.com/hardik211005"
                 className="group flex items-center space-x-2"
                 target="_blank"
                 rel="noreferrer"
@@ -195,7 +195,7 @@ export default function Contact() {
                 </div>
               </a>
               <a
-                href="https://www.linkedin.com/in/HardikDhameeja08/"
+                href="https://www.linkedin.com/in/hardik-dhameeja-9700192b0/"
                 className="group group flex w-fit items-center space-x-2"
                 target="_blank"
                 rel="noreferrer"
@@ -207,7 +207,7 @@ export default function Contact() {
                 </div>
               </a>
               <a
-                href="https://x.com/HardikDhameeja08"
+                href="https://x.com/dhameeja90060"
                 className="group group flex w-fit items-center space-x-2"
                 target="_blank"
                 rel="noreferrer"
