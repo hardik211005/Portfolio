@@ -40,7 +40,7 @@ export default function Contact() {
     return () => clearInterval(timer);
   }, []);
 
-  // LinkedIn redirect
+  // LinkedIn redirect link
   const openLinkedIn = () => {
     window.open(
       "https://www.linkedin.com/in/hardik-dhameeja-9700192b0/",
