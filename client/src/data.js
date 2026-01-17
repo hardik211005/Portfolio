@@ -7,7 +7,7 @@ import notifyImg from "./assets/images/Notify.png";
 export const siteConfig = {
   name: "HardikDhameeja",
   title: "HardikDhameeja - FullStack Web Developer",
-  description: "Frontend developer and designer based in New Delhi, India. Specializing in React, React Native and creating digital experiences that inspire and connect.",
+  description: "FullStack Web developer and designer based in New Delhi, India. Specializing in React, React Native and creating digital experiences that inspire and connect.",
   url: "https://HardikDhameeja.vercel.app",
   email: "HardikDhameeja0810@gmail.com",
   social: {
@@ -36,8 +36,8 @@ export const projects = [
     "Tailwind CSS",
   ],
   image: medicoImg,
-  link: "https://medico-frontend-beta.vercel.app/",
-  liveUrl: "https://medico-frontend-beta.vercel.app/",
+  link: "https://medico-FullStack Web-beta.vercel.app/",
+  liveUrl: "https://medico-FullStack Web-beta.vercel.app/",
   sourceUrl: "https://github.com/hardik211005/Medico",
   featured: true,
   status: "Web Application",
@@ -110,7 +110,7 @@ export const projects = [
     {
       title: "MERN Stack for Full Control",
       points: [
-        "Unified JavaScript stack across frontend and backend",
+        "Unified JavaScript stack across FullStack Web and backend",
         "Rapid development and scalability",
         "Strong ecosystem support",
       ],
@@ -140,7 +140,7 @@ export const projects = [
   ],
 
   techStack: [
-    { label: "Frontend", value: "React + Tailwind CSS" },
+    { label: "FullStack Web", value: "React + Tailwind CSS" },
     { label: "Backend", value: "Node.js + Express" },
     { label: "Database", value: "MongoDB" },
     { label: "Authentication", value: "JWT" },
@@ -335,7 +335,7 @@ export const projects = [
   ],
 
   techStack: [
-    { label: "Frontend", value: "Next.js + Tailwind CSS" },
+    { label: "FullStack Web", value: "Next.js + Tailwind CSS" },
     { label: "Backend", value: "Node.js + Express.js" },
     { label: "Database", value: "Prisma ORM" },
     { label: "Authentication", value: "NextAuth" },
@@ -524,7 +524,7 @@ export const projects = [
   ],
 
   techStack: [
-    { label: "Frontend", value: "React.js + Tailwind CSS" },
+    { label: "FullStack Web", value: "React.js + Tailwind CSS" },
     { label: "Backend", value: "REST APIs" },
     { label: "Analytics", value: "Click & geo tracking engine" },
     { label: "Visualization", value: "Charts.js" },
@@ -717,7 +717,7 @@ export const projects = [
   ],
 
   techStack: [
-    { label: "Frontend", value: "Next.js + Tailwind CSS" },
+    { label: "FullStack Web", value: "Next.js + Tailwind CSS" },
     { label: "Backend", value: "Node.js + Express.js" },
     { label: "Database", value: "Prisma ORM" },
     { label: "Authentication", value: "Clerk" },
@@ -881,7 +881,7 @@ export const projects = [
     {
       title: "MERN Stack for Learning & Scalability",
       points: [
-        "Clear separation of frontend and backend",
+        "Clear separation of FullStack Web and backend",
         "Hands-on exposure to full stack workflows",
         "Easy future expansion"
       ],
@@ -899,7 +899,7 @@ export const projects = [
   ],
 
   techStack: [
-    { label: "Frontend", value: "React + Tailwind CSS" },
+    { label: "FullStack Web", value: "React + Tailwind CSS" },
     { label: "Backend", value: "Node.js + Express" },
     { label: "Database", value: "MongoDB" },
     { label: "Authentication", value: "JWT" },
