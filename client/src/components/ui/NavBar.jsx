@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { gsap } from "gsap";
-import HardikLogo from "../../assets/images/hardik.svg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function NavBar({ sectionRefs, color }) {
@@ -51,7 +50,7 @@ export default function NavBar({ sectionRefs, color }) {
           end: "bottom 300px",
           animation: gsap
             .timeline()
-            .to(logo.current, { fill: "#DDDDD5"}, 0)
+            .to(logo.current, { fill: "#DDDDD5" }, 0)
             .to(navBar.current, { color: "#DDDDD5" })
             .to(cta.current, { backgroundColor: "#D1D1C7", color: "#0E0E0C" }, 0)
             .to(".bg-secondary-100", { backgroundColor: "#0E0E0C" }, 0),
@@ -74,15 +73,21 @@ export default function NavBar({ sectionRefs, color }) {
       >
         {/* logo */}
         <Link to="/" aria-label="Logo" className="z-50">
-  <img
-    src={HardikLogo}
-    alt="Hardik Logo"
-    className="h-8 cursor-pointer"
-  />
-</Link>
+          <svg 
+    <path
+            d="M0 0 C3 2 3 2 3.875 3.8125 C4.05405331 6.94593298 2.78508157 8.48766297 1 11 C0.34 11.66 -0.32 12.32 -1 13 C-5.55555556 12.44444444 -5.55555556 12.44444444 -7 11 C-7.40680103 7.33879072 -7.5001525 5.6381256 -5.1875 2.6875 C-3 1 -3 1 0 0 Z"
+            transform="translate(497,129)"
+          />
+          <path
+            d="M0 0 C0.33 0 0.66 0 1 0 C1 1.65 1 3.3 1 5 C0.67 5 0.34 5 0 5 C0 3.35 0 1.7 0 0 Z"
+            transform="translate(126,151)"
+          />
+        </g>
+      </svg>
+    </Link >
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-7 font-grotesk text-body-3 items-center">
+      {/* Desktop Navigation */ }
+      < nav className = "hidden md:flex space-x-7 font-grotesk text-body-3 items-center" >
           <Link to="/#about" className="group relative min-h-[44px] flex items-center">
             <span>about</span>
             <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
@@ -105,14 +110,15 @@ export default function NavBar({ sectionRefs, color }) {
               <span>Let's Talk.</span>
             </span>
           </Link>
-        </nav>
+        </nav >
 
-        {/* Mobile Hamburger Button */}
-        <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden z-50 w-11 h-11 flex flex-col items-center justify-center gap-1.5 rounded-lg"
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          aria-expanded={isMenuOpen}
+    {/* Mobile Hamburger Button */ }
+    < button
+  onClick = {() => setIsMenuOpen(!isMenuOpen)
+}
+className = "md:hidden z-50 w-11 h-11 flex flex-col items-center justify-center gap-1.5 rounded-lg"
+aria - label={ isMenuOpen ? "Close menu" : "Open menu" }
+aria - expanded={ isMenuOpen }
         >
           <span 
             className={`block w-6 h-0.5 bg-current transition-all duration-300 ease-out ${
@@ -129,58 +135,53 @@ export default function NavBar({ sectionRefs, color }) {
               isMenuOpen ? '-rotate-45 -translate-y-2' : ''
             }`}
           />
-        </button>
-      </header>
+        </button >
+      </header >
 
-      {/* Mobile Menu Overlay */}
-      <div 
-        className={`fixed inset-0 z-40 bg-accent-400/95 backdrop-blur-xl transition-all duration-500 ease-out md:hidden ${
-          isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
-        }`}
+  {/* Mobile Menu Overlay */ }
+  < div
+className = {`fixed inset-0 z-40 bg-accent-400/95 backdrop-blur-xl transition-all duration-500 ease-out md:hidden ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+  }`}
       >
-        <nav className="flex flex-col items-center justify-center h-full gap-8 font-grotesk">
-          <Link 
-            to="/#about" 
-            onClick={handleLinkClick}
-            className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center ${
-              isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
-            }`}
-            style={{ transitionDelay: isMenuOpen ? '100ms' : '0ms' }}
-          >
-            about
-          </Link>
-          <Link 
-            to="/#services" 
-            onClick={handleLinkClick}
-            className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center ${
-              isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
-            }`}
-            style={{ transitionDelay: isMenuOpen ? '150ms' : '0ms' }}
-          >
-            services
-          </Link>
-          <Link 
-            to="/#works" 
-            onClick={handleLinkClick}
-            className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center ${
-              isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
-            }`}
-            style={{ transitionDelay: isMenuOpen ? '200ms' : '0ms' }}
-          >
-            projects
-          </Link>
-          <Link 
-            to="/#contact" 
-            onClick={handleLinkClick}
-            className={`mt-4 px-8 py-4 bg-secondary-400 text-accent-400 rounded-full text-xl font-medium transition-all duration-300 min-h-[44px] flex items-center justify-center ${
-              isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
-            }`}
-            style={{ transitionDelay: isMenuOpen ? '250ms' : '0ms' }}
-          >
-            Let's Talk.
-          </Link>
-        </nav>
-      </div>
+  <nav className="flex flex-col items-center justify-center h-full gap-8 font-grotesk">
+    <Link
+      to="/#about"
+      onClick={handleLinkClick}
+      className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
+        }`}
+      style={{ transitionDelay: isMenuOpen ? '100ms' : '0ms' }}
+    >
+      about
+    </Link>
+    <Link
+      to="/#services"
+      onClick={handleLinkClick}
+      className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
+        }`}
+      style={{ transitionDelay: isMenuOpen ? '150ms' : '0ms' }}
+    >
+      services
+    </Link>
+    <Link
+      to="/#works"
+      onClick={handleLinkClick}
+      className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
+        }`}
+      style={{ transitionDelay: isMenuOpen ? '200ms' : '0ms' }}
+    >
+      projects
+    </Link>
+    <Link
+      to="/#contact"
+      onClick={handleLinkClick}
+      className={`mt-4 px-8 py-4 bg-secondary-400 text-accent-400 rounded-full text-xl font-medium transition-all duration-300 min-h-[44px] flex items-center justify-center ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
+        }`}
+      style={{ transitionDelay: isMenuOpen ? '250ms' : '0ms' }}
+    >
+      Let's Talk.
+    </Link>
+  </nav>
+      </div >
     </>
   );
 }
